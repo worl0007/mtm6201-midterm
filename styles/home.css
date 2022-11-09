@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  min-height: 10vh;
+  min-width: 100%;
+  z-index: 10;
+  background: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+header .navigation .logo {
+  margin-left: 20px;
+}
+
+header .navigation .logo h1 {
+  color: white;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+header .navigation .menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: auto 20px auto 0;
+}
+
+header .navigation .humbarger {
+  margin-right: 20px;
+  display: none;
+}
+
+header .navigation .humbarger .bar {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background: #ffffff;
+}
+
+header .navigation .menu-list li a {
+  color: #ffffff;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, border 1s ease;
+  text-decoration: none;
+}
+
+/* Hero Section styles */
+#container {
+  margin-top: 66px;
+  min-height: 100vh;
+  background-image: url("../assets/elephants.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#hero-heading {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+}
+
+/* Hero Section ended */
+
+/* Captures/memories section styles started */
+.two-column {
+  margin: 0 7.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 7rem;
+}
+
+.two-column div {
+}
+
+.sub-heading {
+  color: #5f6972;
+  font-family: "Lora", sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 3rem;
+  margin: 2rem 0rem;
+  font-weight: 500;
+}
+
+#sub-heading-2 {
+  padding-bottom: 3rem;
+}
+.description {
+  color: #5f6972;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  overflow-y: hidden;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+/* #description-2 {
+  padding-right: 10px;
+} */
+
+#image-1,
+#image-2 {
+  width: 400px;
+  height: auto;
+}
+
+#image-2 {
+  margin-left: 5rem;
+}
+#div-2 {
+  margin-top: 2.5rem;
+}
+
+/* Captures/memories section styles ended */
+
+/* Footer Styles */
+
+#footer {
+  margin-top: 2rem;
+  background-color: #7c8893;
+  padding: 2.2rem 0rem;
+}
+
+#footer-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Social icons section started */
+#social {
+  background-color: #000000;
+  padding: 1rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#copyright {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.icons {
+  margin: 0rem 0.2rem;
+}
+/* Social icons section ended */
+
+/* Tablet desktop :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Nav styles */
+  header .navigation .menu-list {
+    width: 60%;
+  }
+
+  header .navigation .menu-list li a {
+    font-size: 0.8rem;
+  }
+
+  /* hero-section styles  */
+  #container {
+    margin-top: 52px;
+    min-height: 65vh;
+  }
+
+  #hero-heading {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    font-size: 3.5em;
+  }
+
+  /* Captures/memories section styles  */
+  .two-column {
+    margin: 0 2rem;
+    grid-column-gap: 2rem;
+  }
+
+  .sub-heading {
+    font-size: 1.6em;
+    font-weight: normal;
+    line-height: 2rem;
+    margin: 1rem 0rem;
+    font-weight: 500;
+  }
+
+  #sub-heading-2 {
+    padding-bottom: 1.5rem;
+  }
+
+  .description {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow-y: hidden;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  #image-1,
+  #image-2 {
+    width: 300px;
+    height: auto;
+  }
+
+  #image-2 {
+    margin-left: 2rem;
+  }
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+  header .navigation .menu-list {
+    position: absolute;
+    top: 10vh;
+    min-width: 100%;
+    background: #000000;
+    text-align: center;
+    display: none;
+  }
+
+  header .navigation .menu-list li {
+    display: block;
+  }
+
+  header .navigation .menu-list li a {
+    display: block;
+    padding: 20px;
+    transition: color 1s ease, padding 1s ease, background-color 1s ease;
+  }
+
+  header .navigation .menu-list li a:hover {
+    color: #ffffff;
+    padding-left: 30px;
+    background: rgba(177, 212, 224, 0.2);
+  }
+
+  header .navigation .humbarger {
+    display: block;
+  }
+
+  /* Hero Section styles */
+  #container {
+    min-height: 40vh;
+    margin-top: 53px;
+    margin-bottom: 0px;
+  }
+
+  #hero-heading {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    font-size: 2.2em;
+  }
+
+  /* Captures/memories section styles  */
+
+  .two-column {
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-column-gap: 2rem; */
+  }
+
+  .sub-heading {
+    font-size: 1.6em;
+    font-weight: normal;
+    line-height: 1.5rem;
+    margin: 1rem 0rem;
+    font-weight: 500;
+  }
+
+  #sub-heading-2 {
+    padding-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    font-weight: 500;
+    overflow-y: hidden;
+    line-height: 20px;
+  }
+
+  #image-1 {
+    margin-top: 1rem;
+  }
+
+  #image-1,
+  #image-2 {
+    width: 320px;
+    height: auto;
+  }
+  #image-2 {
+    margin-left: 0rem;
+  }
+
+  /* Footer menu styles */
+  #footer-list li a {
+    font-size: 1rem;
+  }
+
+  /* Footer social styles */
+  #social {
+    padding: 1rem 2rem;
+  }
+}
+
+/* small mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+}

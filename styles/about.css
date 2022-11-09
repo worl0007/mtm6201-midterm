@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  min-height: 10vh;
+  min-width: 100%;
+  z-index: 10;
+  background: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+header .navigation .logo {
+  margin-left: 20px;
+}
+
+header .navigation .logo h1 {
+  color: white;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+header .navigation .menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: auto 20px auto 0;
+}
+
+header .navigation .humbarger {
+  margin-right: 20px;
+  display: none;
+}
+
+header .navigation .humbarger .bar {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background: #ffffff;
+}
+
+header .navigation .menu-list li a {
+  color: #ffffff;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, border 1s ease;
+  text-decoration: none;
+}
+
+#about-heading {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  color: #5f6972;
+  font-size: 3em;
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#child-image {
+  width: 350px;
+}
+
+.sub-heading {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #41464b;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#sub-heading-2 {
+  margin-top: 1rem;
+}
+
+.para {
+  color: #818080;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.two-column {
+  /* margin: 0 7.8rem; */
+  margin: 0 16rem 0 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0rem;
+}
+
+#div-2 {
+  margin-left: -1rem;
+}
+
+/* Footer Styles */
+
+#footer {
+  margin-top: 2rem;
+  background-color: #7c8893;
+  padding: 2.2rem 0rem;
+}
+
+#footer-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/* Social icons section started */
+#social {
+  background-color: #000000;
+  padding: 1rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#copyright {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.icons {
+  margin: 0rem 0.2rem;
+}
+/* Social icons section ended */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Nav styles */
+  header .navigation .menu-list {
+    width: 60%;
+  }
+
+  header .navigation .menu-list li a {
+    font-size: 0.8rem;
+  }
+
+  #child-image {
+    width: 300px;
+    height: 350px;
+  }
+
+  #about-heading {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 2.5em;
+  }
+
+  .sub-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .para {
+    font-size: 1.1rem;
+  }
+
+  .two-column {
+    margin: 0 2rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0rem;
+  }
+
+  #div-2 {
+    margin-left: 0rem;
+  }
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+  header .navigation .menu-list {
+    position: absolute;
+    top: 10vh;
+    min-width: 100%;
+    background: #000000;
+    text-align: center;
+    display: none;
+  }
+
+  header .navigation .menu-list li {
+    display: block;
+  }
+
+  header .navigation .menu-list li a {
+    display: block;
+    padding: 20px;
+    transition: color 1s ease, padding 1s ease, background-color 1s ease;
+  }
+
+  header .navigation .menu-list li a:hover {
+    color: #ffffff;
+    padding-left: 30px;
+    background: rgba(177, 212, 224, 0.2);
+  }
+
+  header .navigation .humbarger {
+    display: block;
+  }
+
+  #child-image {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #about-heading {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 2em;
+  }
+
+  .sub-heading {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .para {
+    font-size: 1.05rem;
+  }
+
+  .two-column {
+    margin: 0 2rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0rem;
+  }
+
+  #div-2 {
+    margin-left: 0rem;
+  }
+
+  /* Footer menu styles */
+  #footer-list li a {
+    font-size: 1rem;
+  }
+
+  /* Footer social styles */
+  #social {
+    padding: 1rem 2rem;
+  }
+}
+
+/* small mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+}
